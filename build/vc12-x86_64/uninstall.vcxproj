@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C6D2BC5-0C6D-34FC-956E-E98DA9C93D1B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>uninstall</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\project\H265\x265_3.3\x265_3.3\source\.;D:\project\H265\x265_3.3\x265_3.3\source\common;D:\project\H265\x265_3.3\x265_3.3\source\encoder;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64;D:\project\H265\x265_3.3\x265_3.3\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\project\H265\x265_3.3\x265_3.3\source\.;D:\project\H265\x265_3.3\x265_3.3\source\common;D:\project\H265\x265_3.3\x265_3.3\source\encoder;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64;D:\project\H265\x265_3.3\x265_3.3\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\project\H265\x265_3.3\x265_3.3\source\.;D:\project\H265\x265_3.3\x265_3.3\source\common;D:\project\H265\x265_3.3\x265_3.3\source\encoder;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64;D:\project\H265\x265_3.3\x265_3.3\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\project\H265\x265_3.3\x265_3.3\source\.;D:\project\H265\x265_3.3\x265_3.3\source\common;D:\project\H265\x265_3.3\x265_3.3\source\encoder;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64;D:\project\H265\x265_3.3\x265_3.3\source\compat\getopt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\0732804c137c36acdd7e25511a1d90e9\uninstall.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\software\cmake\bin\cmake.exe -P D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/cmake/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\software\cmake\bin\cmake.exe -P D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/cmake/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\software\cmake\bin\cmake.exe -P D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/cmake/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\software\cmake\bin\cmake.exe -P D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/cmake/cmake_uninstall.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\uninstall</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\project\H265\x265_3.3\x265_3.3\source\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/project/H265/x265_3.3/x265_3.3/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\software\cmake\bin\cmake.exe -SD:/project/H265/x265_3.3/x265_3.3/source -BD:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64 --check-stamp-file D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeCCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeCXXCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeRCCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeSystem.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\FindNasm.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\FindVLD.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\cmake_uninstall.cmake.in;D:\project\H265\x265_3.3\x265_3.3\source\cmake\version.cmake;D:\project\H265\x265_3.3\x265_3.3\source\x265.def.in;D:\project\H265\x265_3.3\x265_3.3\source\x265.pc.in;D:\project\H265\x265_3.3\x265_3.3\source\x265.rc.in;D:\project\H265\x265_3.3\x265_3.3\source\x265_config.h.in;D:\software\cmake\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindGit.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindHg.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/project/H265/x265_3.3/x265_3.3/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\software\cmake\bin\cmake.exe -SD:/project/H265/x265_3.3/x265_3.3/source -BD:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64 --check-stamp-file D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeCCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeCXXCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeRCCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeSystem.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\FindNasm.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\FindVLD.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\cmake_uninstall.cmake.in;D:\project\H265\x265_3.3\x265_3.3\source\cmake\version.cmake;D:\project\H265\x265_3.3\x265_3.3\source\x265.def.in;D:\project\H265\x265_3.3\x265_3.3\source\x265.pc.in;D:\project\H265\x265_3.3\x265_3.3\source\x265.rc.in;D:\project\H265\x265_3.3\x265_3.3\source\x265_config.h.in;D:\software\cmake\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindGit.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindHg.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/project/H265/x265_3.3/x265_3.3/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\software\cmake\bin\cmake.exe -SD:/project/H265/x265_3.3/x265_3.3/source -BD:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64 --check-stamp-file D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeCCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeCXXCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeRCCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeSystem.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\FindNasm.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\FindVLD.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\cmake_uninstall.cmake.in;D:\project\H265\x265_3.3\x265_3.3\source\cmake\version.cmake;D:\project\H265\x265_3.3\x265_3.3\source\x265.def.in;D:\project\H265\x265_3.3\x265_3.3\source\x265.pc.in;D:\project\H265\x265_3.3\x265_3.3\source\x265.rc.in;D:\project\H265\x265_3.3\x265_3.3\source\x265_config.h.in;D:\software\cmake\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindGit.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindHg.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/project/H265/x265_3.3/x265_3.3/source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\software\cmake\bin\cmake.exe -SD:/project/H265/x265_3.3/x265_3.3/source -BD:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64 --check-stamp-file D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeCCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeCXXCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeRCCompiler.cmake;D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\3.14.5\CMakeSystem.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\FindNasm.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\FindVLD.cmake;D:\project\H265\x265_3.3\x265_3.3\source\cmake\cmake_uninstall.cmake.in;D:\project\H265\x265_3.3\x265_3.3\source\cmake\version.cmake;D:\project\H265\x265_3.3\x265_3.3\source\x265.def.in;D:\project\H265\x265_3.3\x265_3.3\source\x265.pc.in;D:\project\H265\x265_3.3\x265_3.3\source\x265.rc.in;D:\project\H265\x265_3.3\x265_3.3\source\x265_config.h.in;D:\software\cmake\share\cmake-3.14\Modules\CMakeCInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;D:\software\cmake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckCXXCompilerFlag.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckCXXSourceCompiles.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckFunctionExists.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckIncludeFiles.cmake;D:\software\cmake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;D:\software\cmake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindGit.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindHg.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindPackageHandleStandardArgs.cmake;D:\software\cmake\share\cmake-3.14\Modules\FindPackageMessage.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\Windows.cmake;D:\software\cmake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\ZERO_CHECK.vcxproj">
+      <Project>{3A10D7C6-1C5F-3F51-A191-C437B9A53BE4}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

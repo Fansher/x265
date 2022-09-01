@@ -1,0 +1,11 @@
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/x265-static.dir
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/x265-shared.dir
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/cli.dir
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/uninstall.dir
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/INSTALL.dir
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/ALL_BUILD.dir
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/ZERO_CHECK.dir
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/encoder/CMakeFiles/encoder.dir
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/encoder/CMakeFiles/INSTALL.dir
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/common/CMakeFiles/common.dir
+D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/common/CMakeFiles/INSTALL.dir

@@ -1,0 +1,54 @@
+Determining if the strtok_r exist failed with the following output:
+Change Dir: D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe cmTC_96329.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=12.0 /v:m 
+Microsoft(R) 生成引擎版本 12.0.21005.1
+[Microsoft .NET Framework 版本 4.0.30319.42000]
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 18.00.21005.1 版
+  版权所有(C) Microsoft Corporation。  保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_96329.dir\Debug\\" /Fd"cmTC_96329.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\CMakeTmp\CheckSymbolExists.c"
+  
+  CheckSymbolExists.c
+D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\CMakeTmp\CheckSymbolExists.c(8): error C2065: “strtok_r”: 未声明的标识符 [D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\CMakeTmp\cmTC_96329.vcxproj]
+
+File D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtok_r
+  return ((int*)(&strtok_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if files getopt.h exist failed with the following output:
+Change Dir: D:/project/H265/x265_3.3/x265_3.3/build/vc12-x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe cmTC_6f6ca.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=12.0 /v:m 
+Microsoft(R) 生成引擎版本 12.0.21005.1
+[Microsoft .NET Framework 版本 4.0.30319.42000]
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 18.00.21005.1 版
+  版权所有(C) Microsoft Corporation。  保留所有权利。
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_6f6ca.dir\Debug\\" /Fd"cmTC_6f6ca.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\CheckIncludeFiles\HAVE_GETOPT_H.c"
+  
+  HAVE_GETOPT_H.c
+D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\CheckIncludeFiles\HAVE_GETOPT_H.c(2): fatal error C1083: 无法打开包括文件: “getopt.h”: No such file or directory [D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\CMakeTmp\cmTC_6f6ca.vcxproj]
+
+Source:
+/* */
+#include <getopt.h>
+
+
+int main(void){return 0;}
+

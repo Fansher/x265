@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\CMakeFiles\fc75306cfdb1ea17a059f42db9353d84\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FC44F71A-BB7F-3ED0-97F6-AAEC8A22BD92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\project\H265\x265_3.3\x265_3.3\source\input\input.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\project\H265\x265_3.3\x265_3.3\source\input\y4m.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\project\H265\x265_3.3\x265_3.3\source\input\yuv.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\project\H265\x265_3.3\x265_3.3\source\output\output.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\project\H265\x265_3.3\x265_3.3\source\output\raw.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\project\H265\x265_3.3\x265_3.3\source\output\reconplay.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\project\H265\x265_3.3\x265_3.3\source\output\y4m.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\project\H265\x265_3.3\x265_3.3\source\output\yuv.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\project\H265\x265_3.3\x265_3.3\source\compat\getopt\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\project\H265\x265_3.3\x265_3.3\source\x265.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\input\input.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\input\y4m.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\input\yuv.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\output\output.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\output\raw.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\output\reconplay.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\output\y4m.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\output\yuv.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\compat\getopt\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\x265.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\project\H265\x265_3.3\x265_3.3\source\x265cli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\project\H265\x265_3.3\x265_3.3\source\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\project\H265\x265_3.3\x265_3.3\COPYING" />
+    <None Include="D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\x265.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\project\H265\x265_3.3\x265_3.3\build\vc12-x86_64\x265.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{669864E4-D9C1-3E35-BB46-49B203C86D7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0CAC863E-0014-305B-92A0-7591F86C868E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{E98BCB0C-90C4-3BA0-B1D0-60AFDA35DE58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="output">
+      <UniqueIdentifier>{AFF7173A-D3B1-33C7-B8A2-419285A47201}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
