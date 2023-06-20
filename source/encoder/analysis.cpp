@@ -511,14 +511,25 @@ void Analysis::qprdRefine(const CUData& parentCTU, const CUGeom& cuGeom, int32_t
     md.bestMode->reconYuv.copyToPicYuv(*m_frame->m_reconPic, parentCTU.m_cuAddr, cuGeom.absPartIdx);
 }
 
+//CU的帧内编码：
+/*
+(1)从根64x64CU开始进行划分，通过四叉树划分获得第一个32x32的CU
+(2)对于第一个32x32的CU，先通过调用checkIntra函数进行帧内预测模式的RDO，并计算RD Cost；将该32x32的CU进行四叉树划分获得4个16x16的CU
+(3)对于第一个16x16的CU，先通过调用checkIntra函数进行帧内预测模式的RDO，并计算RD Cost；将该16x16的CU进行四叉树划分获得4个8x8的CU
+(4)对于四个8x8的CU，分别对每一个8x8CU调用checkIntra函数计算RD Cost
+(5)返回到第三步中的16x16的CU，将其不进行四叉树划分所得的RD Cost和第四步得到的RD Cost进行比较，两者的比较结果决定了该16x16的CU是否划分为4个8x8的CU
+(6)用同样的方法，比较第二个、第三个和第四个的16x16的CU，并将这四个16x16CU的最优的RD Cost累加起来
+(7)返回到第二步中的32x32的CU，比较第一个32x32CU的RD Cost和第6中获得的四个16x16RD Cost累加和，从而决定对该32x32CU进行四叉树划分
+(8)同理，计算第二个、第三个和第四个32x32CU的最优RD Cost，决定是否对其进行四叉树划分。
+*/
 uint64_t Analysis::compressIntraCU(const CUData& parentCTU, const CUGeom& cuGeom, int32_t qp)
 {
-    uint32_t depth = cuGeom.depth;
-    ModeDepth& md = m_modeDepth[depth];
+    uint32_t depth = cuGeom.depth; //当前cu的深度，0~3, 0表示64x64, 3表示8x8
+    ModeDepth& md = m_modeDepth[depth]; //对应深度的模式信息md
     md.bestMode = NULL;
 
-    bool mightSplit = !(cuGeom.flags & CUGeom::LEAF);
-    bool mightNotSplit = !(cuGeom.flags & CUGeom::SPLIT_MANDATORY);
+    bool mightSplit = !(cuGeom.flags & CUGeom::LEAF); //表示当前cu可能还需要继续划分子块
+    bool mightNotSplit = !(cuGeom.flags & CUGeom::SPLIT_MANDATORY); //表示当前快不需要继续划分
 
     bool bAlreadyDecided = m_param->intraRefine != 4 && parentCTU.m_lumaIntraDir[cuGeom.absPartIdx] != (uint8_t)ALL_IDX && !(m_param->bAnalysisType == HEVC_INFO);
     bool bDecidedDepth = m_param->intraRefine != 4 && parentCTU.m_cuDepth[cuGeom.absPartIdx] == depth;
@@ -535,7 +546,7 @@ uint64_t Analysis::compressIntraCU(const CUData& parentCTU, const CUGeom& cuGeom
     {
         if (bDecidedDepth && mightNotSplit)
         {
-            Mode& mode = md.pred[0];
+            Mode& mode = md.pred[0]; //初始化模式为merge（下标索引为0）
             md.bestMode = &mode;
             mode.cu.initSubCU(parentCTU, cuGeom, qp);
             bool reuseModes = !((m_param->intraRefine == 3) ||
@@ -560,6 +571,7 @@ uint64_t Analysis::compressIntraCU(const CUData& parentCTU, const CUGeom& cuGeom
         checkIntra(md.pred[PRED_INTRA], cuGeom, SIZE_2Nx2N);
         checkBestMode(md.pred[PRED_INTRA], depth);
 
+        //如果当前cu尺寸为8x8，则不能继续划分为更小的尺寸了，针对4x4的帧内PU划分模式PRED_INTRA_NxN进行搜索
         if (cuGeom.log2CUSize == 3 && m_slice->m_sps->quadtreeTULog2MinSize < 3)
         {
             md.pred[PRED_INTRA_NxN].cu.initSubCU(parentCTU, cuGeom, qp);

@@ -174,8 +174,8 @@ public:
     cucopy_t      m_subPartCopy;      // pointer to function that copies m_numPartitions/4 elements, may be NULL
     cubcast_t     m_subPartSet;       // pointer to function that sets m_numPartitions/4 elements, may be NULL
 
-    uint32_t      m_cuAddr;           // address of CTU within the picture in raster order
-    uint32_t      m_absIdxInCTU;      // address of CU within its CTU in Z scan order
+    uint32_t      m_cuAddr;           // address of CTU within the picture in raster order(当前CU所属的CTU在图片的位置，以64x64为单位)
+    uint32_t      m_absIdxInCTU;      // address of CU within its CTU in Z scan order(以4x4为单位)
     uint32_t      m_cuPelX;           // CU position within the picture, in pixels (X)
     uint32_t      m_cuPelY;           // CU position within the picture, in pixels (Y)
     uint32_t      m_numPartitions;    // maximum number of 4x4 partitions within this CU
